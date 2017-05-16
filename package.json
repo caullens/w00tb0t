@@ -1,0 +1,31 @@
+{
+  "name": "w00tb0t",
+  "version": "1.0.0",
+  "description": "An all in one Discord bot. Hopefully...",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caullens/w00tb0t.git"
+  },
+  "keywords": [
+    "bot",
+    "Discord",
+    "all-in-one",
+    "all",
+    "in",
+    "one",
+    "w00t"
+  ],
+  "author": "Caullen R Sasnett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caullens/w00tb0t/issues"
+  },
+  "homepage": "https://github.com/caullens/w00tb0t#readme",
+  "dependencies": {
+    "discord.js": "^11.1.0"
+  }
+}
