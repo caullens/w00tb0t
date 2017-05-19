@@ -3,7 +3,6 @@ const fs = require('fs');
 const client = new Discord.Client();
 const Commands = require('./commands.js');
 const sqlite = require('sqlite-sync');
-sqlite.connect('w00tb0t.db');
 var commands = new Commands();
 var syntax = {};
 
@@ -19,6 +18,7 @@ fs.readFile('config.json', (err, data) => {
   }
   config = JSON.parse(data);
 
+  sqlite.connect(config.db);
   client.login(config.token);
 });
 
