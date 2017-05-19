@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/caullens/w00tb0t#readme",
   "dependencies": {
-    "discord.js": "^11.1.0"
+    "discord.js": "^11.1.0",
+    "sqlite-sync": "^0.3.6",
+    "sqlite3": "^3.1.8"
   }
 }

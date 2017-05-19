@@ -6,12 +6,11 @@ var exports = module.exports = Commands;
 
 function Commands() {
   this.commands = {};
-  this.create("test", "Test command", this.test.bind(this));
   this.create("help", "Lists all commands", this.help.bind(this));
 }
 
 Commands.prototype.execute = function(args, msg) {
-  return this.commands[args[0]].callback(args);
+  return this.commands[args[0]].callback(args, msg);
 }
 
 Commands.prototype.create = function(command, description, callback) {
@@ -19,15 +18,10 @@ Commands.prototype.create = function(command, description, callback) {
 }
 
 Commands.prototype.update = function() {
-
 }
 
 Commands.prototype.destroy = function() {
 
-}
-
-Commands.prototype.test = function(args) {
-  return "THIS IS A TEST";
 }
 
 Commands.prototype.help = function(args) {
